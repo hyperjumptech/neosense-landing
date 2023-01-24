@@ -5,35 +5,32 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import screenshotNotifications from '@/images/screenshots/notifications.webp'
+import screenshotMonitoring from '@/images/screenshots/monitoring.webp'
+import screenshotCertificateStatus from '@/images/screenshots/certificate-status.webp'
+import screenshotPublicStatusPage from '@/images/screenshots/public-status-page.webp'
 
 const features = [
   {
-    title: 'Payroll',
-    description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+    title: 'Monitor globally',
+    description: 'Monitor your application across the globe.',
+    image: screenshotMonitoring,
   },
   {
-    title: 'Claim expenses',
-    description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+    title: 'Notifications',
+    description: 'Never miss an alert. Set up multiple ways to get notified.',
+    image: screenshotNotifications,
   },
   {
-    title: 'VAT handling',
+    title: 'Status page',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      'Communicate your application status directly to your customers.',
+    image: screenshotPublicStatusPage,
   },
   {
-    title: 'Reporting',
-    description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+    title: 'Certificate status',
+    description: "You'll never miss to renew your certificate again.",
+    image: screenshotCertificateStatus,
   },
 ]
 
@@ -58,7 +55,7 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
+      aria-label="Features for monitor your businesses"
       className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
     >
       <Image
@@ -72,11 +69,11 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Everything you need to monitor your application.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            It designed to help you keep your systems and applications running
+            at their best
           </p>
         </div>
         <Tab.Group
