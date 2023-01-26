@@ -6,6 +6,8 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import screenshotAlert from '@/images/screenshots/alert.webp'
 import screenshotConfiguration from '@/images/screenshots/configuration.webp'
+import screenshotOrganizeProbes from '@/images/screenshots/organize-probes.webp'
+import screenshotSyntheticMonitoring from '@/images/screenshots/complex-probe.webp'
 
 const features = [
   {
@@ -60,6 +62,57 @@ const features = [
             clipRule="evenodd"
           />
         </svg>
+      )
+    },
+  },
+  {
+    name: 'Synthetic Monitoring',
+    summary: 'Configure the requests from simple to the complex one.',
+    description:
+      'Send the request you want to send every time Neosense probes your server including the headers and the body. You can even chain multiple requests one another.',
+    image: screenshotSyntheticMonitoring,
+    icon: function SyntheticMonitoringIcon() {
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="#fff"
+          className="h-6 w-6"
+        >
+          <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+          <path
+            fillRule="evenodd"
+            d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z"
+            clipRule="evenodd"
+          />
+        </svg>
+      )
+    },
+  },
+  {
+    name: 'Organize probes',
+    summary: 'Create organizations and projects to organize your probes.',
+    description:
+      'You can group multiple probes in the same project for convenience. You can also create multiple organizations to group multiple projects. Furthermore, you can invite other users to manage organizations, projects, and the probes.',
+    image: screenshotOrganizeProbes,
+    icon: function OrganizeProbesIcons() {
+      return (
+        <>
+          <path
+            opacity=".5"
+            d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+          <path
+            opacity=".3"
+            d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+          <path
+            d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+        </>
       )
     },
   },
@@ -125,7 +178,7 @@ function FeaturesDesktop() {
     <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
       {({ selectedIndex }) => (
         <>
-          <Tab.List className="grid grid-cols-2 gap-x-8">
+          <Tab.List className="grid grid-cols-4 gap-x-8">
             {features.map((feature, featureIndex) => (
               <Feature
                 key={feature.name}
