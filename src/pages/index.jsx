@@ -8,6 +8,7 @@ import { Hero } from '@/components/Hero'
 // import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { MonikaSection } from '@/components/MonikaSection'
 // import { Testimonials } from '@/components/Testimonials'
 
 export default function Home() {
@@ -62,6 +63,7 @@ export default function Home() {
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
+        <MonikaSection />
         {/* <Testimonials /> */}
         {/* <Pricing /> */}
         {/* <Faqs /> */}
