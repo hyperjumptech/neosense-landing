@@ -30,7 +30,7 @@ export function Hero() {
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         Get notified from whatever app you want (Telegram, Slack, etc) when your
         website or API is down based on HTTP status code or content of the
-        response, or when your server is slow.
+        response, or even when your server is slow.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="https://neosense.bgnlab.id/">Get it free</Button>

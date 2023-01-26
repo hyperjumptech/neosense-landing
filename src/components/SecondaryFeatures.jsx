@@ -13,7 +13,7 @@ const features = [
   {
     name: 'Customizable alert',
     summary:
-      'It designed to give you a complete control of what events that matter to you.',
+      "It's designed to give you a complete control of what events that matter to you.",
     description:
       "With our customizable alerts, you'll be able to stay on top of critical issues and response quickly.",
     image: screenshotAlert,
@@ -69,7 +69,7 @@ const features = [
     name: 'Synthetic Monitoring',
     summary: 'Configure the requests from simple to the complex one.',
     description:
-      'Send the request you want to send every time Neosense probes your server including the headers and the body. You can even chain multiple requests one another.',
+      'Send the request you want to send every time Neo Sense probes your server including the headers and the body. You can even chain multiple requests one another.',
     image: screenshotSyntheticMonitoring,
     icon: function SyntheticMonitoringIcon() {
       return (
@@ -241,7 +241,7 @@ export function SecondaryFeatures() {
             Every application is unique.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            The monitoring tool that you can tailored to your specific needs and
+            The monitoring tool that can be tailored to your specific needs and
             preferences.
           </p>
         </div>
