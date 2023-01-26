@@ -15,13 +15,28 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Neo Sense - Distributed synthetic monitoring across multiple regions
-          made simple for your businesses
+          Website Uptime Monitoring Service & Free Status Pages - Neo Sense
         </title>
         <meta
           name="description"
-          content="🕭 Get notified from whatever app you want (Telegram, Slack, etc) when your website or API is down based on HTTP status code or content of the response, or when your server is slow."
+          content="Get website downtime alerts by WhatsApp, Teams, Slack, Telegram, email, and more. Free uptime monitoring tool, SSL alerts, and beautiful status pages with incidents notifications."
         />
+        <meta name="keywords" content="synthetic monitoring, web monitoring" />
+        <link rel="canonical" href="https://neosense.hyperjump.tech/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Website Uptime Monitoring Service & Free Status Pages - Neosense"
+        />
+        <meta
+          property="og:description"
+          content="Get website downtime alerts by WhatsApp, Teams, Slack, Telegram, email, and more. Free uptime monitoring tool, SSL alerts, and beautiful status pages with incidents notifications."
+        />
+        <meta property="og:url" content="https://neosense.hyperjump.tech/" />
+        <meta property="og:site_name" content="Neo Sense" />
+
+        <meta name="twitter:card" content="summary_large_image" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
