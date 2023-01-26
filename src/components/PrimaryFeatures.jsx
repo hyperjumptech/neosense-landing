@@ -13,12 +13,12 @@ import screenshotPublicStatusPage from '@/images/screenshots/public-status-page.
 const features = [
   {
     title: 'Monitor globally',
-    description: 'Monitor your application across the globe.',
+    description: 'Monitor your application across the globe even from Indonesia!',
     image: screenshotMonitoring,
   },
   {
     title: 'Notifications',
-    description: 'Never miss an alert. Set up multiple ways to get notified.',
+    description: 'Never miss an alert. Set up multiple ways to get notified via Slack, Telegram, WhatsApp, and more!',
     image: screenshotNotifications,
   },
   {
