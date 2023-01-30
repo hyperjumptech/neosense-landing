@@ -1,5 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document'
-import Script from 'next/script'
+import { GTM_ID } from '../lib/gtm'
 
 export default function Document(props) {
   let pageProps = props.__NEXT_DATA__?.props?.pageProps
@@ -10,15 +10,6 @@ export default function Document(props) {
       lang="en"
     >
       <Head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-7LLQWRH1RL" />
-
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7LLQWRH1RL');`}
-        </Script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -31,6 +22,14 @@ export default function Document(props) {
         />
       </Head>
       <body className="flex h-full flex-col">
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <Main />
         <NextScript />
       </body>
