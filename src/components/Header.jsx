@@ -110,7 +110,7 @@ export function Header() {
             <div className="hidden md:block">
               <NavLink href="https://neosense.bgnlab.id/login">Sign in</NavLink>
             </div>
-            <Button href="https://neosense.bgnlab.id/register" color="blue">
+            <Button href="https://neosense.bgnlab.id/register" color="green">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>
