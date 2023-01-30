@@ -10,10 +10,7 @@ export default function Document(props) {
       lang="en"
     >
       <Head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-7LLQWRH1RL"
-        />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-7LLQWRH1RL" />
 
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
