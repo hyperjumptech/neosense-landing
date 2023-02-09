@@ -9,16 +9,19 @@ import screenshotNotifications from '@/images/screenshots/notifications.webp'
 import screenshotMonitoring from '@/images/screenshots/monitoring.webp'
 import screenshotCertificateStatus from '@/images/screenshots/certificate-status.webp'
 import screenshotPublicStatusPage from '@/images/screenshots/public-status-page.webp'
+import screenshotQuickImport from '@/images/screenshots/quick-import.webp'
 
 const features = [
   {
     title: 'Monitor globally',
-    description: 'Monitor your application across the globe even from Indonesia!',
+    description:
+      'Monitor your application across the globe even from Indonesia!',
     image: screenshotMonitoring,
   },
   {
     title: 'Notifications',
-    description: 'Never miss an alert. Set up multiple ways to get notified via Slack, Telegram, WhatsApp, and more!',
+    description:
+      'Never miss an alert. Set up multiple ways to get notified via Slack, Telegram, WhatsApp, and more!',
     image: screenshotNotifications,
   },
   {
@@ -31,6 +34,12 @@ const features = [
     title: 'Certificate status',
     description: "You'll never miss to renew your certificate again.",
     image: screenshotCertificateStatus,
+  },
+  {
+    title: 'Quickly probe multiple URLs',
+    description:
+      'Import URLs to probe quickly from sitemap, Postman, HAR, and more!',
+    image: screenshotQuickImport,
   },
 ]
 
@@ -85,7 +94,7 @@ export function PrimaryFeatures() {
           {({ selectedIndex }) => (
             <>
               <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
-                <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
+                <Tab.List className="relative z-10 flex gap-x-4 overflow-auto whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
                       key={feature.title}
