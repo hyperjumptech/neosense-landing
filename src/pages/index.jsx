@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Website Uptime Monitoring Service & Free Status Pages - Neo Sense
+          Website Uptime Monitoring Service & Free Status Pages - NEO Sense
         </title>
         <meta
           name="description"
@@ -28,14 +28,14 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Website Uptime Monitoring Service & Free Status Pages - Neosense"
+          content="Website Uptime Monitoring Service & Free Status Pages - NEO Sense"
         />
         <meta
           property="og:description"
           content="Get website downtime alerts by WhatsApp, Teams, Slack, Telegram, email, and more. Free uptime monitoring tool, SSL alerts, and beautiful status pages with incidents notifications."
         />
         <meta property="og:url" content="https://neosense.hyperjump.tech/" />
-        <meta property="og:site_name" content="Neo Sense" />
+        <meta property="og:site_name" content="NEO Sense" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <link

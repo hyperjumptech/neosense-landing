@@ -69,7 +69,7 @@ const features = [
     name: 'Synthetic Monitoring',
     summary: 'Configure the requests from simple to the complex one.',
     description:
-      'Send the request you want to send every time Neo Sense probes your server including the headers and the body. You can even chain multiple requests one another.',
+      'Send the request you want to send every time NEO Sense probes your server including the headers and the body. You can even chain multiple requests one another.',
     image: screenshotSyntheticMonitoring,
     icon: function SyntheticMonitoringIcon() {
       return (
