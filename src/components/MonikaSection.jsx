@@ -14,7 +14,7 @@ export function MonikaSection() {
             Open source powered
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Neosense is powered by the free and open source synthetic monitoring command line tools called Monika by Hyperjump.
+            NEO Sense is powered by the free and open source synthetic monitoring command line tools called Monika by Hyperjump.
           </p>
           <Button
             href="https://monika.hyperjump.tech/"
